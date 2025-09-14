@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Milestones in Computer History</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+    header {
+      background: #2b4c7e;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    .timeline {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+    }
+    .card {
+      background: white;
+      margin: 1rem 0;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      cursor: pointer;
+      transition: transform 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .card:hover {
+      transform: scale(1.02);
+    }
+    .card img {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+    .card-content {
+      flex: 1;
+    }
+    .card h2 {
+      margin: 0;
+      font-size: 1.5rem;
+      color: #2b4c7e;
+    }
+    .card small {
+      color: #666;
+    }
+    .details {
+      display: none;
+      margin-top: 1rem;
+      line-height: 1.5;
+    }
+    .active .details {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Milestones in Computer History</h1>
+    <p>Explore the key innovations that shaped computing performance over time.</p>
+  </header>
+
+  <section class="timeline">
+    <div class="card" onclick="toggleCard(this)">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6c/ENIAC_Penn1.jpg" alt="ENIAC">
+      <div class="card-content">
+        <h2>ENIAC (1945)</h2>
+        <small>Electronic Numerical Integrator and Computer</small>
+        <div class="details">
+          <p><b>Brief Description:</b> ENIAC was the first general-purpose electronic computer, replacing electromechanical machines and punch-card calculators.</p>
+          <p><b>Performance Impact:</b> ENIAC could perform thousands of calculations per second, a huge leap from manual computation. Its speed revolutionized scientific research, enabling complex calculations in hours instead of weeks. Though large and power-hungry, it proved electronic computers could vastly outperform mechanical predecessors.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <img src="https://static4.arrow.com/-/media/arrow/images/820-x-410/1222-image-of-transistor-grayscale-820x410-header.jpg" alt="Transistor">
+      <div class="card-content">
+        <h2>Transistor (1947)</h2>
+        <small>Bell Labs</small>
+        <div class="details">
+          <p><b>Brief Description:</b> The transistor replaced bulky vacuum tubes as the basic building block of electronics, being smaller, faster, and more reliable.</p>
+          <p><b>Performance Impact:</b> Computers became faster, more energy efficient, and compact. This innovation enabled second-generation computers, improving processing reliability and reducing costs. Without transistors, modern microprocessors and personal computers would not exist.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <img src="https://www.nutsvolts.com/uploads/wygwam/NV_0222_Steber_Figure02.jpg" alt="Integrated Circuit">
+      <div class="card-content">
+        <h2>Integrated Circuit (1958)</h2>
+        <small>Invented by Jack Kilby and Robert Noyce</small>
+        <div class="details">
+          <p><b>Brief Description:</b> Integrated circuits combined multiple transistors into a single silicon chip, replacing individual wired components.</p>
+          <p><b>Performance Impact:</b> ICs drastically increased computational speed and decreased size. They reduced manufacturing complexity and cost, enabling mass production. This innovation laid the foundation for microprocessors and modern consumer electronics.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <img src="https://www.researchgate.net/publication/276199637/figure/fig1/AS:393420590862337@1470810186341/ntel-4004-Microprocessor-1971-6.png" alt="Microprocessor">
+      <div class="card-content">
+        <h2>Microprocessor (1971)</h2>
+        <small>Intel 4004</small>
+        <div class="details">
+          <p><b>Brief Description:</b> The Intel 4004 was the first commercial microprocessor, integrating CPU functions onto a single chip, replacing multi-board CPUs.</p>
+          <p><b>Performance Impact:</b> Microprocessors enabled the development of affordable personal computers and embedded systems. They improved performance while reducing size and cost, fueling the computer revolution of the 1970s and 1980s.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <img src="https://static.scientificamerican.com/sciam/cache/file/B5FBB89E-6314-478B-80496FBE53AF8591_source.jpg" alt="World Wide Web">
+      <div class="card-content">
+        <h2>World Wide Web (1991)</h2>
+        <small>Tim Berners-Lee</small>
+        <div class="details">
+          <p><b>Brief Description:</b> The World Wide Web transformed computing by connecting documents through hyperlinks, replacing isolated file-based systems.</p>
+          <p><b>Performance Impact:</b> It revolutionized information access, collaboration, and global communication. The web allowed distributed computing resources and applications to scale, leading to the rise of e-commerce, cloud computing, and knowledge sharing at an unprecedented level.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="card" onclick="toggleCard(this)">
+      <img src="https://cdn.prod.website-files.com/65ce1f0a85671121f6dab2e8/67ed02513f65610cc9c55055_TXT-688-blog%25201-1%2520(1)-min.jpeg" alt="Smartphone">
+      <div class="card-content">
+        <h2>Smartphones (2007)</h2>
+        <small>Apple iPhone</small>
+        <div class="details">
+          <p><b>Brief Description:</b> Smartphones integrated computing, communication, and internet into handheld devices, replacing traditional mobile phones.</p>
+          <p><b>Performance Impact:</b> Smartphones brought powerful processors, advanced networking, and vast app ecosystems to everyday users. This innovation reshaped computing by shifting focus to mobility, efficiency, and real-time data, essentially putting a supercomputer in every pocket.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function toggleCard(card) {
+      card.classList.toggle("active");
+    }
+  </script>
+</body>
+</html>
